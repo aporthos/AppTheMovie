@@ -162,7 +162,8 @@ class LocationFragment : BaseFragment<FragmentLocationBinding>(), OnMapReadyCall
     private fun getLocation() {
         val mLocationRequest = LocationRequest()
         mLocationRequest.priority = LocationRequest.PRIORITY_HIGH_ACCURACY
-        mLocationRequest.interval = TimeUnit.MINUTES.toMillis(5)
+        // TODO: 23/10/21 Implementation configurations remotes
+        mLocationRequest.interval = TimeUnit.MINUTES.toMillis(30)
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(activity)
         fusedLocationProviderClient.requestLocationUpdates(
