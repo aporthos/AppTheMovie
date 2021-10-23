@@ -25,6 +25,16 @@ ext {
     versions.coroutines_play_services = '1.1.1'
     versions.maps = '17.0.1'
     versions.location = '18.0.0'
+    versions.junit = '4.13.2'
+    versions.mockito_inline = '2.23.4'
+    versions.mockito_kotlin = '2.2.112'
+    versions.core_testing = '2.1.0'
+    versions.coroutines_test = '1.4.1'
+    versions.coroutines_core = '1.4.2'
+    versions.gradle = '4.1.2'
+    versions.kotlin_gradle_plugin = '4.1.2'
+    versions.hilt_android_gradle_plugin = '2.31.2-alpha'
+    versions.google_services = '4.3.10'
 
     kotlin_stdlib = [
             kotlin_stdlib: "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}"
@@ -104,5 +114,21 @@ ext {
     play_services = [
             maps    : "com.google.android.gms:play-services-maps:${versions.maps}",
             location: "com.google.android.gms:play-services-location:${versions.location}",
+    ]
+
+    tests = [
+            junit          : "junit:junit:${versions.junit}",
+            mockito_inline : "org.mockito:mockito-inline:$versions.mockito_inline",
+            mockito_kotlin : "org.mockito.kotlin:mockito-kotlin:${versions.mockito_kotlin}",
+            core_testing   : "androidx.arch.core:core-testing:${versions.core_testing}",
+            coroutines_test: "org.jetbrains.kotlinx:kotlinx-coroutines-test:${versions.coroutines_test}",
+            coroutines_core: "org.jetbrains.kotlinx:kotlinx-coroutines-core:${versions.coroutines_core}",
+    ]
+
+    classpath_all = [
+            gradle                    : "com.android.tools.build:gradle:${versions.gradle}",
+            kotlin_gradle_plugin      : "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}",
+            hilt_android_gradle_plugin: "com.google.dagger:hilt-android-gradle-plugin:${versions.hilt_android_gradle_plugin}",
+            google_services           : "com.google.gms:google-services:$versions.google_services",
     ]
 }
