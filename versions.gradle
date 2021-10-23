@@ -21,6 +21,8 @@ ext {
     versions.picasso = '2.71828'
     versions.swiperefreshlayout = '1.1.0'
     versions.lottie = '3.4.1'
+    versions.easypermissions = '1.0.0'
+    versions.coroutines_play_services = '1.1.1'
 
     kotlin_stdlib = [
             kotlin_stdlib: "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}"
@@ -89,4 +91,11 @@ ext {
             picasso: "com.squareup.picasso:picasso:${versions.picasso}"
     ]
 
+    easypermissions = [
+            easy: "com.vmadalin:easypermissions-ktx:${versions.easypermissions}"
+    ]
+
+    coroutines_play_services = [
+            coroutines: "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:${versions.coroutines_play_services}"
+    ]
 }

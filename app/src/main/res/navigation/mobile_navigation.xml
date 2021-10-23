@@ -12,10 +12,10 @@
         tools:layout="@layout/fragment_movies_list" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="net.portes.appthemovie.ui.storage.HomeFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_images"
+        android:name="net.portes.appthemovie.ui.images.ImagesFragment"
+        android:label="@string/title_images"
+        tools:layout="@layout/fragment_images" />
 
     <fragment
         android:id="@+id/navigation_notifications"

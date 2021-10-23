@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "445828755956",
+    "project_id": "appthemovie-99f78",
+    "storage_bucket": "appthemovie-99f78.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445828755956:android:ca7fbf3ac7f1d0a3b509a1",
+        "android_client_info": {
+          "package_name": "net.portes.appthemovie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445828755956-jon913agllre4pars36o6uver5njrn7r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSj2B9ic4TqLUEHFtClSfzhfozsPKEffo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445828755956-jon913agllre4pars36o6uver5njrn7r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
