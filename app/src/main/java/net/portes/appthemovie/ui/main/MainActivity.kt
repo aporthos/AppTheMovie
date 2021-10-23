@@ -1,5 +1,6 @@
 package net.portes.appthemovie.ui.main
 
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +16,14 @@ import net.portes.appthemovie.R
  */
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
+
+    companion object {
+        @JvmStatic
+        fun launch(from: AppCompatActivity) {
+            from.startActivity(Intent(from, MainActivity::class.java))
+            from.finish()
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
