@@ -18,8 +18,8 @@
         tools:layout="@layout/fragment_images" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="net.portes.appthemovie.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_location"
+        android:name="net.portes.appthemovie.ui.location.LocationFragment"
+        android:label="@string/title_location"
+        tools:layout="@layout/fragment_location" />
 </navigation>

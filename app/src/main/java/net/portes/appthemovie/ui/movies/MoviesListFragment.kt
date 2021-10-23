@@ -8,7 +8,6 @@ import net.portes.appthemovie.ui.base.BaseFragment
 import net.portes.shared.extensions.observe
 import net.portes.shared.ui.base.ViewState
 import net.portes.movies.domain.models.MovieDto
-import timber.log.Timber
 
 /**
  * @author amadeus.portes
@@ -44,7 +43,6 @@ class MoviesListFragment : BaseFragment<FragmentMoviesListBinding>() {
         when (result) {
             is ViewState.Loading -> showLoader()
             is ViewState.Success -> {
-                Timber.i("resultMovieList: -> ${result.data}")
                 hideLoader()
                 moviesAdapter.submitList(result.data)
             }

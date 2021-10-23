@@ -23,6 +23,8 @@ ext {
     versions.lottie = '3.4.1'
     versions.easypermissions = '1.0.0'
     versions.coroutines_play_services = '1.1.1'
+    versions.maps = '17.0.1'
+    versions.location = '18.0.0'
 
     kotlin_stdlib = [
             kotlin_stdlib: "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}"
@@ -97,5 +99,10 @@ ext {
 
     coroutines_play_services = [
             coroutines: "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:${versions.coroutines_play_services}"
+    ]
+
+    play_services = [
+            maps    : "com.google.android.gms:play-services-maps:${versions.maps}",
+            location: "com.google.android.gms:play-services-location:${versions.location}",
     ]
 }

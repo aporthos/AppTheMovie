@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_permissions_read_write">Se necesitan los permisos</string>
+    <string name="message_save_location_success">Se guardo una nueva ubicacion :)</string>
+</resources>

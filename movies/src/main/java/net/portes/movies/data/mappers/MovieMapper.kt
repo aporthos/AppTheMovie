@@ -8,11 +8,12 @@ import javax.inject.Inject
 /**
  * @author amadeus.portes
  */
- class MovieMapper @Inject constructor() : BaseMapper<MovieResponse, MovieDto> {
+class MovieMapper @Inject constructor() : BaseMapper<MovieResponse, MovieDto> {
     companion object {
         const val TAG = "MovieMapper"
         private const val URL_IMAGE = "https://image.tmdb.org"
     }
+
     override fun mapFrom(from: MovieResponse): MovieDto = MovieDto(
         adult = from.adult,
         backdropPath = from.backdropPath,
