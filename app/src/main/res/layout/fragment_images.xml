@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.images.ImagesFragment">
+
+        <Button
+            android:id="@+id/openGalleryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_dimen_8dp"
+            android:text="@string/message_open_from_gallery"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/previewImageView"
+            android:layout_width="@dimen/common_dimen_0dp"
+            android:layout_height="@dimen/common_dimen_0dp"
+            android:layout_marginTop="@dimen/common_dimen_16dp"
+            android:layout_marginBottom="@dimen/common_dimen_16dp"
+            app:layout_constraintBottom_toTopOf="@+id/uploadButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/openGalleryButton"
+            android:src="@drawable/ic_default_gallery"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/uploadButton"
+            android:layout_width="@dimen/common_dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_dimen_8dp"
+            android:text="@string/message_upload_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

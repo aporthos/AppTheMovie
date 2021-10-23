@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_open_from_gallery">Abrir galeria</string>
+    <string name="message_upload_image">Subir Imagen</string>
+    <string name="message_alert_open_from_gallery">Selecciona una imagen de la galeria</string>
+    <string name="message_upload_image_success">Se subio exitosamente la imagen</string>
+    <string name="message_upload_image_failed">Ocurrio un error al subir la imagen</string>
+</resources>

@@ -16,8 +16,6 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
-
-        buildConfigField "String", "API_KEY", '"e257cb4af4066c77a62f0364db322a71"'
     }
 
     buildTypes {
@@ -41,9 +39,10 @@ dependencies {
     implementation hilt_android.values()
     kapt hilt_kapt.values()
 
-    implementation retrofit.values()
+    implementation platform("com.google.firebase:firebase-bom:28.4.1")
+    implementation 'com.google.firebase:firebase-storage'
 
-    implementation coroutines.values()
+    implementation coroutines_play_services.values()
 
     implementation project(":shared")
 

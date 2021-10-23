@@ -3,6 +3,7 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -65,8 +66,14 @@ dependencies {
 
     implementation lifecycle.values()
 
+    implementation platform("com.google.firebase:firebase-bom:28.4.1")
+    implementation 'com.google.firebase:firebase-storage'
+
+    implementation easypermissions.values()
+
     testImplementation 'junit:junit:4.+'
 
     implementation project(":shared")
     implementation project(":movies")
+    implementation project(":images")
 }
