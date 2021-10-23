@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_not_network">No tienes Internet</string>
+    <string name="message_timeout_error">Tiempo de espera agotado</string>
+    <string name="message_unknow_error">Ocurrio un error desconocido</string>
+    <string name="title_error_dialog">Opss! Ocurrio un error</string>
+    <string name="message_retry">Reintentar</string>
+</resources>

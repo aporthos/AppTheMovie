@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -15,6 +17,8 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "BASE_URL", '"https://api.themoviedb.org"'
     }
 
     buildTypes {
@@ -30,20 +34,39 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        dataBinding = true
+    }
 }
 
 dependencies {
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.6.0'
-    implementation 'androidx.appcompat:appcompat:1.3.1'
-    implementation 'com.google.android.material:material:1.4.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
-    implementation 'androidx.navigation:navigation-fragment:2.3.5'
-    implementation 'androidx.navigation:navigation-ui:2.3.5'
-    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+    implementation kotlin_stdlib.values()
+    implementation core_android.values()
+
+    implementation hilt_android.values()
+    kapt hilt_kapt.values()
+
+    implementation timber.values()
+
+    implementation retrofit.values()
+
+    implementation coroutines.values()
+
+    implementation moshi.values()
+
+    kapt codegen.values()
+
+    implementation interceptor.values()
+
+    implementation views.values()
+
+    implementation navigation.values()
+
+    implementation lifecycle.values()
+
     testImplementation 'junit:junit:4.+'
+
+    implementation project(":shared")
+    implementation project(":movies")
 }
