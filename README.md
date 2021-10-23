@@ -1,5 +1,4 @@
 # AppTheMovie
-App para consumir The Movie DB
 The app contains an Movies module, Images and a Locations module, the locations update every 30 minutes, the api The Movies DB was integrated (https://www.themoviedb.org/)
 An MVVM architecture was used, using Clean Architecture, along with the repository pattern.
 
