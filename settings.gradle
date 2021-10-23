@@ -1,2 +1,4 @@
+include ':shared'
+include ':movies'
 include ':app'
 rootProject.name = "AppTheMovie"
