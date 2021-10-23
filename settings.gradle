@@ -1,3 +1,4 @@
+include ':locations'
 include ':images'
 include ':shared'
 include ':movies'
